@@ -1,0 +1,203 @@
+.linksContainer {
+  padding: 20px;
+  height: 100%;
+  font-family: Arial, sans-serif;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.linksContainer table{
+    border-radius: 10px;
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px,
+    rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+}
+
+.table th,
+.table td {
+  /* border: 1px solid #ddd; */
+  text-align: center;
+  padding: 15px;
+}
+
+.table th {
+  background-color: #f3f7fd;
+}
+
+.table thead tr th {
+  font-weight: 400;
+}
+/* Add ellipsis for overflowing text */
+.overflowText {
+  max-width: 200px; /* Adjust the max-width as needed */
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.activeStatus {
+  color: green;
+}
+
+.inactiveStatus {
+  color: #b0901e;
+}
+
+.actionButton {
+  all: unset;
+  margin-right: 8px;
+  padding: 5px 10px;
+  border: none;
+  cursor: pointer;
+  border-radius: 4px;
+  font-size: 0.9rem;
+}
+
+.actionButton:hover {
+  background-color: #f3f7fd;
+}
+
+.linkColum {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.copyBtn {
+  all: unset;
+  cursor: pointer;
+}
+
+/* pagination */
+.skillsOptns{
+  font-size: 15px;
+  align-items: center;
+  padding: 10px 10px;
+  color: gray;
+  outline: none;
+  border: 2px solid #E3E3E3;
+  border-radius: 8px;    
+ }
+ 
+ .skillDisplay{
+     display: grid;
+     grid-template-columns: repeat(3, 1fr); 
+     grid-template-rows: repeat(3);
+     gap: 20px;
+     place-items: center;     
+ }
+.actionBtn{
+  display: flex;
+  gap: 10px;
+  align-items: end;
+  justify-content: space-between;
+}
+
+
+.Applybtn{
+  all: unset;
+  background-color:#919EAB;
+  color: #fff;
+  padding: 5px 15px;
+  font-size: 16px;
+  border-radius: 5px;
+}
+.ClearBtn{
+  all: unset;
+  color: #919EAB;
+  padding: 5px 15px;
+  font-size: 18px;
+  font-weight: 500;
+}
+*:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+.paging{
+  width: 20%;
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+.paging select{
+  padding: 10px 10px;
+}
+
+.paging button{
+  padding: 10px 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+}
+
+/* second table */
+.tableTwo {
+  display: none;
+  width: 90%;
+  border-collapse: collapse;
+}
+
+
+.tableTwo th, 
+.tableTwo td {
+  padding: 10px;
+  text-align: left;
+  border: 1px solid #ddd;
+}
+
+
+.tableTwo .linkColum {
+  display: flex;
+  align-items: start;
+  justify-content: space-between;
+  word-wrap: break-word;
+}
+
+.tableTwo th {
+  background-color: #f3f7fd;
+  font-weight: bold;
+  width: 20%; 
+}
+
+
+@media only screen and (max-width: 768px) {
+  .table{
+    display: none;
+  }
+  .tableTwo {
+    display: block;
+  }
+}
+
+@media only screen and (max-width: 400px){
+  .tableTwo {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  .tableTwo th, 
+.tableTwo td {
+  padding: 5px;
+  font-size: 13px;
+  text-align: left;
+  }
+}
+.spacer {
+  border: none;
+  height: 10px; /* Adjust height for spacing */
+}
+
+.tableTwo .SpaceTr td{
+  border: none;
+  background: #fff;
+}

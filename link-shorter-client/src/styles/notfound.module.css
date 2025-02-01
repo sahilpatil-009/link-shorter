@@ -1,0 +1,31 @@
+.notFoundContainer {
+    text-align: center;
+    padding: 50px;
+  }
+  
+  .notFoundContainer h1 {
+    font-size: 36px;
+    color: red;
+  }
+  
+  .notFoundContainer p {
+    font-size: 18px;
+    color: gray;
+  }
+  
+  .notFoundContainer a {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background: blue;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+  }
+  
+  .notFoundContainer a:hover {
+    background: darkblue;
+  }
+
+  
+  

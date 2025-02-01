@@ -1,0 +1,97 @@
+.conatiner{
+    width: 95%;
+    height:90%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.UpdateForm{
+    width: 35%;
+    height: 70%;
+    /* border: 1px solid black; */
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 10px 10px;
+}
+
+
+.UserInp{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* .UserInp p{
+    width: 40%;
+} */
+
+.UserInp input{
+    width: 60%;
+    padding:10px 10px;
+    font-size: 16px;
+    outline: none;
+    border: 2px solid #ECECF2;
+    border-radius: 5px;
+}
+
+.userBtns{
+    width: 100%;
+    margin-top: 10%;
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    flex-direction: column;
+}
+
+.userBtns button{
+    width: 100%;
+    font-size: 15px;
+    padding: 10px 10px;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.userBtns button:nth-child(1){
+    background-color: #1B48DA;
+}
+.userBtns button:nth-child(2){
+    background-color: #EB0D0D;
+}
+
+@media only screen and (max-width: 768px){
+    .UpdateForm{
+        width: 40%;
+        gap: 15px;
+    }
+}
+@media only screen and (max-width: 690px){
+    .UpdateForm{
+        width: 60%;
+        gap: 15px;
+        height:90%;
+    }
+}
+@media only screen and (max-width: 445px){
+    .UpdateForm{
+        width: 80%;
+        gap: 10px;
+        height:90%;
+    }
+    .UserInp input{
+        font-size: 14px;
+    }
+    .UserInp p{
+        font-size: 14px;
+    }
+}
+@media only screen and (max-width: 325px){
+    .UpdateForm{
+        width: 90%;
+        gap: 10px;
+    }
+}

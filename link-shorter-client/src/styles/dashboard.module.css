@@ -1,0 +1,400 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+}
+.main {
+  height: 100vh;
+  width: 100vw;
+  position: relative;
+  display: flex;
+  overflow: auto;
+  font-family: "Open Sans";
+}
+
+.sideBar {
+  width: 20%;
+  height: 100%;
+  padding: 30px 0px 0px 20px;
+  background: #fff;
+  border-right: 1px solid #ececf2;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  z-index: 20;
+}
+
+.sideBarV2 {
+  width: 100%;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+}
+
+.sideBarV2 .sidenavbar {
+  display: flex;
+}
+
+.sideBar h2 {
+  font-size: 22px;
+  font-weight: 700;
+}
+
+.sideContainer {
+  width: 90%;
+  /* border: 1px solid black; */
+}
+
+.sidenavbar {
+  /* list-style: none; */
+  padding: 0;
+  width: 100%;
+}
+
+.sidenavbar a {
+  text-decoration: none;
+  width: 100%;
+  margin: 10px 0;
+  text-align: start;
+  color: #3b3c51;
+  font-size: 17px;
+  font-weight: 600;
+  padding: 10px 10px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  border-radius: 5px;
+  transition: all 0.3s ease-in-out;
+}
+.sidenavbar a:nth-last-child(1) {
+  border-top: 1px solid #ececf2;
+}
+
+.sidenavbar a.active {
+  text-decoration: none;
+  background-color: #f3f7fd;
+  color: #1b48da;
+}
+
+.board {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  padding: 10px 0px 0px 10px;
+}
+
+.topNav {
+  width: 100%;
+  background: #fff;
+  z-index: 20;
+  border-bottom: 1px solid #ececf2;
+  border: 2px solid solid;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.greetings {
+  width: 90%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
+}
+.greetings div {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 10px;
+}
+.greetings div.greetingDiv {
+  display: flex;
+  flex-direction: column;
+}
+.greetings div.greetingDiv h3,
+p {
+  word-wrap: break-word;
+  margin: 0;
+}
+.greetings div.greetingDiv p {
+  color: #878ba9;
+}
+
+.greetings .greetIcon {
+  align-self: start;
+}
+
+.userCtrl {
+  width: 60%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.ctrls {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.ctrls button {
+  all: unset;
+  background-color: #1b48da;
+  color: #fff;
+  padding: 10px 12px;
+  display: flex;
+  align-items: center;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.ctrls div {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  border: 2px solid #ececf2;
+  padding: 8px 5px;
+  border-radius: 8px;
+}
+
+.ctrls div input {
+  all: unset;
+  font-size: 15px;
+}
+
+.userSymbol {
+  width: 50px;
+  height: 50px;
+  font-size: 18px;
+  font-weight: 600;
+  background-color: #fde48a;
+  color: #923e0e;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+}
+
+/* default Dashboard  */
+.defaultDash {
+  margin: 15px 40px 10px 40px;
+  min-height: 100%;
+}
+
+.totalClick h2 {
+  font-weight: 680;
+}
+
+.totalClick h2 span {
+  color: #1b48da;
+}
+
+.clicksContinaer {
+  height: 70%;
+  width: 100%;
+  display: flex;
+  align-items: start;
+  justify-content: space-between;
+  gap: 20px;
+  text-align: start;
+}
+
+.dateClick,
+.deviceClick {
+  height: 100%;
+  width: 50%;
+  border: 2px solid #ececf2;
+  border-radius: 10px;
+  padding: 20px 20px;
+}
+
+.dateClick .title,
+.deviceClick .title {
+  color: #1b48da;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+.dateDataCont {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.datatoFill {
+  display: flex;
+  align-items: center;
+  font-weight: 600;
+  gap: 10px;
+}
+
+.datatoFill p:nth-last-child(1) {
+  margin: 0;
+  flex: 1;
+  text-align: center;
+}
+.deviceName {
+  flex: 1;
+}
+
+.bardbox {
+  width: 70%;
+  height: 15px;
+}
+
+.bardbox div {
+  height: 100%;
+  background-color: #1b48da;
+}
+
+.LogoutBtn {
+  all: unset;
+  z-index: 10;
+  position: absolute;
+  right: 5%;
+  top: 10%;
+  background-color: #fff;
+  padding: 10px 15px;
+  border: 2px solid #efeff0;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.LogoutBtnV2 {
+  display: none;
+  font-size: 13px;
+  background-color: #fff;
+  padding: 10px 15px;
+  border: 2px solid #efeff0;
+  border-radius: 5px;
+  cursor: pointer;
+  gap: 5px;
+}
+
+.mobAddbtn{
+  display: none;
+}
+.mobAddbtn button{
+  outline: none;
+  border: none;
+  display: flex;
+  position: fixed;
+  bottom: 5%;
+  right: 10%;
+  background-color: #1b48da;
+  color: #fff;
+  padding: 12px 12px;
+  align-items: center;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+/* Responsive Styles */
+@media only screen and (max-width: 769px) {
+  .sideBar {
+    display: none;
+  }
+  .board {
+    width: 100%;
+  }
+  .sideBarV2 {
+    display: flex;
+    height: 10%;
+    flex-wrap: wrap;
+  }
+  .ctrls button {
+    color: #fff;
+    width: 100px;
+    padding: 10px 10px;
+    font-size: 15px;
+  }
+}
+
+@media only screen and (max-width: 720px) {
+  .topNav {
+    flex-direction: column;
+    padding: 10px 0px;
+  }
+  .userCtrl {
+    width: 90%;
+  }
+  .ctrls button {
+    color: #fff;
+    padding: 8px 10px;
+    font-size: 13px;
+  }
+
+  .ctrls {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .ctrls div input {
+    font-size: 13px;
+  }
+  .greetings {
+    justify-content: space-between;
+  }
+  .greetings div.greetingDiv h3 {
+    font-size: 16px;
+  }
+  .greetings div.greetingDiv p {
+    font-size: 13px;
+  }
+  .LogoutBtnV2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .userSymbol {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 501px) {
+  .sideBarV2 .sideContainer .sidenavbar {
+    gap: 10px;
+  }
+  .sideBarV2 .sideContainer .sidenavbar a{
+    width: 100%;
+    display: flex;
+    font-size: 20px;
+    align-items: center;
+    justify-content: center;
+  }
+  .sideBarV2 a span {
+    display: none;
+  }
+  .clicksContinaer{
+    height: auto;
+    width: 100%;
+    align-items: center;
+    flex-direction: column;
+  }
+  .dateClick,
+  .deviceClick {
+  width: 100%;
+  }
+  .defaultDash{
+    height: 50%;
+  }
+}
+
+@media only screen and (max-width: 426px){
+  .ctrls button{
+    display: none;
+  }
+  .mobAddbtn{
+    display: block;
+  }
+  .ctrls div {
+    width: 100%;
+  }
+  .ctrls div input{
+    width: 100%;
+  }
+}
+
+
